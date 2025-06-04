@@ -15,103 +15,84 @@
 <body>
 
 <h1>Smartketch Help Guide</h1>
-<p>This documentation outlines the technical usage of Smartketch, a web-based molecular drawing and AI-driven modeling platform. Each module is described with functionality, screenshots, and interaction logic to support researchers, chemists, and developers.</p>
+<p>This user manual is designed to help new users navigate Smartketch, a web-based platform for molecular sketching, 3D visualization, AI-assisted design, and chemical property analysis. Each section includes clear steps and screenshots.</p>
 
-<h2>🧱 Structural Views</h2>
+<h2>🧱 Drawing Molecules – 2D Structure Editor</h2>
+<p>
+Smartketch opens by default in the 2D editor, which is the core area for molecular sketching. Users can draw atoms, rings, and bonds using the left toolbar. The editor supports organic and inorganic structures with automatic valence checking.
+</p>
+<img src="images/2Dview.png" alt="2D view showing sketch window and left toolbar" />
 
-<h3>2D and 3D Rendering</h3>
+<h3>Accessing Drawing Tools</h3>
 <ul>
-  <li><strong>2D View:</strong> Standard Kekulé structure display for manual editing and molecule drawing.</li>
-  <li><strong>3D View:</strong> Generates a real-time 3D model of the selected molecule, using force field–optimized geometries.</li>
-  <li><strong>Split View:</strong> Simultaneous 2D/3D window for visual alignment.</li>
+  <li>The <strong>left toolbar</strong> contains tools for atoms, bonds, rings, and selection.</li>
+  <li>Click to activate a tool; the cursor will apply it to the canvas.</li>
 </ul>
-<img src="images/2Dview.png" alt="2D structure view" />
-<img src="images/3Dview.png" alt="3D structure view" />
-<img src="images/Splitview.png" alt="Splitview mode" />
+<img src="images/Left-ToolBar.png" alt="Left toolbar" />
 
-<h2>🎨 Visualization Styles</h2>
+<h3>Adding Atoms and Bonds</h3>
+<ul>
+  <li>Select an element and click to place an atom.</li>
+  <li>Click and drag to create a bond and a new atom.</li>
+  <li>Cycle bond types by clicking multiple times on a bond.</li>
+</ul>
+<img src="images/Top-ToolBar.png" alt="Top toolbar" />
+
+<h2>🧬 3D Molecular Viewer</h2>
+<p>
+The 3D Viewer allows spatial inspection of molecular geometry. You can rotate, zoom, and pan the view. It reflects all changes made in 2D.
+</p>
+<img src="images/3Dview.png" />
+
+<h3>Split View Mode</h3>
+<p>Combines 2D and 3D panels side by side.</p>
+<img src="images/Splitview.png" />
+
+<h2>🎨 Display Styles and Surface Rendering</h2>
+<h3>Color Schemes</h3>
+<img src="images/3D-color scheme-jmol.png" />
+<img src="images/3D-color scheme-Rosmol.png" />
 
 <h3>3D Display Modes</h3>
-<p>Smartketch supports multiple display styles to facilitate structure analysis:</p>
-<ul>
-  <li><code>Ball and Stick</code> – For atomic clarity</li>
-  <li><code>Spacefill</code> – For volume-based occupancy modeling</li>
-  <li><code>Stick</code> – Bond-focused simplification</li>
-</ul>
 <img src="images/3D-Display Style-Ball and Stick.png" />
 <img src="images/3D-Display Style-Spacefill.png" />
 <img src="images/3D-Display Style-Stick.png" />
 
-<h3>Color Schemes</h3>
-<p>Choose between Jmol or Rasmol presets for elemental coloring:</p>
-<img src="images/3D-color scheme-jmol.png" />
-<img src="images/3D-color scheme-Rosmol.png" />
-
-<h3>Surface Mapping</h3>
-<p>Displays molecular surface envelopes with van der Waals mapping:</p>
+<h3>Surface Display</h3>
 <img src="images/3D-Surface display.png" />
 
-<h2>📤 Exporting Structures</h2>
-
-<h3>Export Panels</h3>
-<p>Smartketch allows exporting current structures as raster images or 3D data formats (e.g., SDF):</p>
+<h2>📄 Exporting Structures</h2>
+<p>Export as image or SDF with 3D coordinates.</p>
 <img src="images/3D-export panel-image.png" />
 <img src="images/3D-export panel-image-Tab1.png" />
 <img src="images/3D-export panel-SDF 3D-Tab2.png" />
 
-<h2>🧠 AI-Driven Structure Suggestion</h2>
-
-<h3>AI Assistant Panel</h3>
-<ul>
-  <li>Accessed from the AI tab on the top menu bar</li>
-  <li>Allows search-based structure generation</li>
-  <li>Supports transformation suggestions and property prediction</li>
-</ul>
+<h2>🧠 AI Assistant & Drug Design</h2>
+<h3>AI Structure Generator</h3>
 <img src="images/AI-assistant-TAB-for searching molecule structure.png" />
 
-<h3>Authentication Requirement</h3>
-<p>AI functions are protected; login is required to access advanced features:</p>
+<h3>Login Required</h3>
 <img src="images/AI-loging-require.png" />
 
-<h3>AI Suggestion Output</h3>
-<img src="images/Drug-Design Suggestion Card.png" alt="AI output card" />
-<img src="images/apply modification.png" alt="Apply changes from AI" />
-<img src="images/The structure Design Tab.png" alt="Structure design AI tab" />
+<h3>AI Suggestions</h3>
+<img src="images/Drug-Design Suggestion Card.png" />
+<img src="images/apply modification.png" />
+<img src="images/The structure Design Tab.png" />
 
-<h2>🧬 Molecule Info Cards</h2>
-
-<h3>Overview</h3>
-<p>Each selected molecule will open a dynamic data card with the following:</p>
-<ul>
-  <li>Basic info: formula, weight, SMILES, IUPAC name</li>
-  <li>Drug-likeness score</li>
-  <li>Advanced physico-chemical descriptors</li>
-</ul>
+<h2>🔗 Molecule Info Cards</h2>
 <img src="images/Molecule Info Card- for every selected molecule.png" />
 <img src="images/Molecule Info Card-1.png" />
 <img src="images/Molecule Info Card-Advance tab.png" />
 <img src="images/Molecule Info Card-Drug like Tab.png" />
 
 <h2>📊 Molecule Comparison</h2>
-<p>Compare multiple suggested or manually edited molecules based on computed properties:</p>
 <img src="images/molecule-comparison .png" />
 
-<h2>🧰 Toolbars Overview</h2>
-
-<h3>Left Toolbar</h3>
-<p>Structure editing tools: drawing atoms/bonds, rings, functional groups.</p>
-<img src="images/Left-ToolBar.png" />
-
-<h3>Top Toolbar</h3>
-<p>Global actions: import/export, AI menu, view toggles.</p>
+<h2>🔢 Toolbars</h2>
+<img src="images/Right-ToolBar.png" />
 <img src="images/Top-ToolBar.png" />
 
-<h3>Right Toolbar</h3>
-<p>Visualization settings, geometry optimization, display toggles (2D/3D).</p>
-<img src="images/Right-ToolBar.png" />
-
-<h2>📫 Contact</h2>
-<p>For bug reports or feature requests, contact <strong>support@smartketch.app</strong>.</p>
+<p><strong>Need help?</strong> Contact our support team at <a href="mailto:support@smartketch.app">support@smartketch.app</a></p>
 
 </body>
 </html>
